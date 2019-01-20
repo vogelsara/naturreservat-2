@@ -10,6 +10,14 @@
 </head>
 <body>
 
+<?php
+
+    if (isset($_SESSION["formHasBeenSent"])) {
+        die('ERROR: Form has been already sent');
+    }
+
+?>
+
     <form action="results.php" method="post">
     Apor: <input type="number" name="numberOfMonkeys"><br>
     Giraffer: <input type="number" name="numberOfGiraffes"><br>
