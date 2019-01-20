@@ -2,3 +2,25 @@ img{
     width: 150px;
     height: auto;
 }
+
+body{
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 0.5em;
+    margin-bottom: 1em;
+    padding: 8px;
+}
+
