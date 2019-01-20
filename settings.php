@@ -19,10 +19,12 @@
 ?>
 
     <form action="results.php" method="post">
-    Apor: <input type="number" name="numberOfMonkeys"><br>
-    Giraffer: <input type="number" name="numberOfGiraffes"><br>
-    Tigrar: <input type="number" name="numberOfTigers"><br>
-    Kokosnötter: <input type="number" name="numberOfCocos"><br>
+    Lions: <input type="number" name="numberOfLions"><br>
+    Antilopes: <input type="number" name="numberOfAntilopes"><br>
+    Gorillas: <input type="number" name="numberOfGorillas"><br>
+    Palms: <input type="number" name="numberOfPalms"><br>
+    Pines: <input type="number" name="numberOfPines"><br>
+    Roses: <input type="number" name="numberOfRoses"><br>
     <input type="submit">
     </form>
 
