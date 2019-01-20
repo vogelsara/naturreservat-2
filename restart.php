@@ -6,17 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Naturreservat2</title>
+    <title>Document</title>
 </head>
 <body>
-<?php
+    <?php
+    
+    session_destroy();
 
-    if (is_null($_SESSION["formHasBeenSent"])) {
-        header('Location: settings.php');
-    } else {
-        header('Location: results.php');
-    }
-
-?> 
+    header('Location: index.php');
+    
+    ?>
 </body>
 </html>

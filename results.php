@@ -86,6 +86,10 @@ for ($i = 0; $i < $_SESSION["numberOfCocos"]; $i++) {
 
 ?>
 
+<form action="restart.php">
+    <input type="submit" value="Restart">
+</form>
+
 </body>
 </html>
 
