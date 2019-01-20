@@ -49,25 +49,33 @@ class Coco {
 
 <?php
 
-for ($i = 0; $i < $_GET["numberOfMonkeys"]; $i++) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $_SESSION["formHasBeenSent"] = "true";
+}
+
+if (is_null($_SESSION["formHasBeenSent"])) {
+    header('Location: settings.php');
+}
+
+for ($i = 0; $i < $_POST["numberOfMonkeys"]; $i++) {
     $monkey = new Monkey($i."monkey");
     echo "<img src='img/monkey.png' onclick='alert(\"".$monkey->makeSound()."\")'/>\n";
 }
 
 
-for ($i = 0; $i < $_GET["numberOfGiraffes"]; $i++) {
+for ($i = 0; $i < $_POST["numberOfGiraffes"]; $i++) {
     $giraffe = new Giraffe($i."giraffe");
     echo "<img src='img/giraffe.png' onclick='alert(\"".$giraffe->makeSound()."\")'/>\n";
 }
 
 
-for ($i = 0; $i < $_GET["numberOfTigers"]; $i++) {
+for ($i = 0; $i < $_POST["numberOfTigers"]; $i++) {
     $tiger = new Tiger($i."tiger");
     echo "<img src='img/tiger.png' onclick='alert(\"".$tiger->makeSound()."\")'/>\n";
 }
 
 
-for ($i = 0; $i < $_GET["numberOfCocos"]; $i++) {
+for ($i = 0; $i < $_POST["numberOfCocos"]; $i++) {
     echo "<img src='img/coco.png'/>\n";
 }
 

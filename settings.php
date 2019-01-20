@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <form action="results.php" method="get">
+    <form action="results.php" method="post">
     Apor: <input type="number" name="numberOfMonkeys"><br>
     Giraffer: <input type="number" name="numberOfGiraffes"><br>
     Tigrar: <input type="number" name="numberOfTigers"><br>
