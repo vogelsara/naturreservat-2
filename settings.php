@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
     <title>Naturreservat2</title>
 </head>
 <body>
-    
+
     <form action="results.php" method="get">
     Apor: <input type="number" name="numberOfMonkeys"><br>
     Giraffer: <input type="number" name="numberOfGiraffes"><br>
