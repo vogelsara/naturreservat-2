@@ -9,6 +9,14 @@
     <title>Naturreservat2</title>
 </head>
 <body>
-    
+<?php
+
+    if (is_null($_SESSION["formHasBeenSent"])) {
+        header('Location: settings.php');
+    } else {
+        header('Location: results.php');
+    }
+
+?> 
 </body>
 </html>
